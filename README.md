@@ -12,3 +12,7 @@ The NgCoreApp is a Small Application to learn how to CRUD (Create, Read, Update,
 ## Give a Star ⭐️
 If you find the project helpful in Quick Learning, give it a star. 
 
+### Features
+***
+**Department (CRUD)
+**Student (CRUD)
