@@ -12,6 +12,7 @@ import { ShowStudentComponent } from './student/show-student/show-student.compon
 import { ApiserviceService } from './apiservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
+    //DataTablesModule
   ],
   providers: [ApiserviceService],
   bootstrap: [AppComponent]

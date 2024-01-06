@@ -14,6 +14,7 @@ export class ShowDepartmentComponent implements OnInit {
   ModalTitle = "";
   ActivateAddEditDepartComp: boolean = false;
   depart: any;
+  Departments:any;
 
   DepartmentIdFilter = "";
   DepartmentNameFilter = "";
@@ -25,8 +26,9 @@ export class ShowDepartmentComponent implements OnInit {
 
   addClick() {
     this.depart = {
-      DepartmentId: "0",
-      DepartmentName: ""
+      id: "",
+      departmentName: "",
+      departmentCode: ""
     }
     this.ModalTitle = "Add Department";
     this.ActivateAddEditDepartComp = true;
@@ -40,8 +42,9 @@ export class ShowDepartmentComponent implements OnInit {
 
   deleteClick(item: any) {
     if (confirm('Are you sure??')) {
-      this.service.deleteDepartment(item.DepartmentId).subscribe(data => {
-        alert(data.toString());
+      this.service.deleteDepartment(item.id).subscribe(data => {
+        var departments = Object.values(data);
+        alert(departments[2]);
         this.refreshDepList();
       })
     }
@@ -52,11 +55,11 @@ export class ShowDepartmentComponent implements OnInit {
     this.refreshDepList();
   }
 
-
   refreshDepList() {
     this.service.getDepartmentList().subscribe(data => {
-      this.DepartmentList = data;
-      this.DepartmentListWithoutFilter = data;
+      var departments = Object.values(data);
+      this.DepartmentList=departments[2];
+      this.DepartmentListWithoutFilter = departments[2];
     });
   }
 
