@@ -39,7 +39,6 @@ export class AddEditDepartmentComponent implements OnInit {
     this.service.addDepartment(dept).subscribe(res => {
       alert(res.notificationMessage);
     });
-
   }
 
   updateDepartment() {
