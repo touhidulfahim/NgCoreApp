@@ -16,13 +16,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent,
     DepartmentComponent,
     ShowDepartmentComponent,
     AddEditDepartmentComponent,
     StudentComponent,
     ShowStudentComponent,
-    AddEditStudentComponent
+    AddEditStudentComponent,    
+    AppComponent
   ],
   imports: [
     BrowserModule,
