@@ -15,4 +15,5 @@ If you find the project helpful in Quick Learning, give it a star.
 ### Features
 ***
 **Department (CRUD)
+<img src="https://github.com/touhidulfahim/NgCoreApp/blob/main/ProjectFile/DepartmentUI.png" alt="Banner" title="Banner" style="max-width:100%;">
 **Student (CRUD)
