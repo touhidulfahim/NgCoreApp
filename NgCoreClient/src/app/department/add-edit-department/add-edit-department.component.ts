@@ -12,18 +12,22 @@ export class AddEditDepartmentComponent implements OnInit {
 
   @Input() depart: any;
   DepartmentId = "";
+  DepartmentCode = "";
   DepartmentName = "";
+
 
   ngOnInit(): void {
 
     this.DepartmentId = this.depart.DepartmentId;
     this.DepartmentName = this.depart.DepartmentName;
+    this.DepartmentCode= this.depart.DepartmentCode;
   }
 
   addDepartment() {
     var dept = {
       DepartmentId: this.DepartmentId,
-      DepartmentName: this.DepartmentName
+      DepartmentName: this.DepartmentName,
+      DepartmentCode:this.DepartmentCode
     };
     this.service.addDepartment(dept).subscribe(res => {
       alert(res.toString());
@@ -33,7 +37,8 @@ export class AddEditDepartmentComponent implements OnInit {
   updateDepartment() {
     var dept = {
       DepartmentId: this.DepartmentId,
-      DepartmentName: this.DepartmentName
+      DepartmentName: this.DepartmentName,
+      DepartmentCode: this.DepartmentCode
     };
     this.service.updateDepartment(dept).subscribe(res => {
       alert(res.toString());
