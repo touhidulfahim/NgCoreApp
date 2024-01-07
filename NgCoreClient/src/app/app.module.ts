@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DepartmentComponent } from './department/department.component';
@@ -12,6 +11,7 @@ import { ShowStudentComponent } from './student/show-student/show-student.compon
 import { ApiserviceService } from './apiservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyModalComponent } from './my-modal/my-modal.component';
 //import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
@@ -22,14 +22,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     StudentComponent,
     ShowStudentComponent,
     AddEditStudentComponent,    
-    AppComponent
+    AppComponent, MyModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //NgbModule
     //DataTablesModule
   ],
   providers: [ApiserviceService],
