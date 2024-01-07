@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NgCoreClient';
+
+  currentYearLong(): number {
+    return new Date().getFullYear();
+    }
 }

@@ -25,6 +25,8 @@ public class GetStudentByIdQueryHandler : IHttpRequestHandler<GetStudentByIdQuer
                 StudentName = x.StudentName,
                 FathersName = x.FathersName,
                 PostalAddress = x.PostalAddress,
+                BirthDate = x.BirthDate,
+                DOB = x.BirthDate.ToString("dd MMM yyyy"),
                 Mobile = x.Mobile,
                 Email = x.Email,
                 DepartmentId = x.DepartmentId,

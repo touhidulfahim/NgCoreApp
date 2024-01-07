@@ -7,6 +7,7 @@ public class StudentResponse
     public string StudentName { get; set; } = string.Empty;
     public string FathersName { get; set; } = string.Empty;
     public DateTime BirthDate { get; set; }
+    public string  DOB { get; set; } = string.Empty;
     public string Mobile { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
     public string PostalAddress { get; set; } = string.Empty;

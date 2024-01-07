@@ -49,6 +49,8 @@ public class UpdateStudentCommandHandler : IHttpRequestHandler<UpdateStudentComm
                 PostalAddress = x.PostalAddress,
                 Mobile = x.Mobile,
                 Email = x.Email,
+                BirthDate = x.BirthDate,
+                DOB=x.BirthDate.ToString("dd MMM yyyy"),
                 DepartmentId = x.DepartmentId,
                 DepartmentName = x.Department.DepartmentName
 
